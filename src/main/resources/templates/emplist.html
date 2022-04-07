@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>regist</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" th:href="@{/css/style.css}"></link>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content"> 
+				<div id="header">
+					<div id="rightheader">
+						<p>
+							2020/03/20
+							<br />
+							<a th:if="${session.user!=null}" th:href="@{/user/logout}">Safe logout</a>
+							<a th:if="${session.user==null}" th:href="@{/login}">Click to login</a>
+						</p>
+					</div>
+					<div id="topheader">
+						<h1 id="title">
+							<a href="#">main</a>
+						</h1>
+					</div>
+					<div id="navigation">
+					</div>
+				</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					<h1>
+						Hello <span th:if ="${session.user!=null}" th:text="${session.user.username}"></span>
+						<span th:if ="${session.user==null}">visitor</span>!
+					</h1>
+					<table class="table">
+						<tr class="table_header">
+							<td>
+								Id
+							</td>
+							<td>
+								Name
+							</td>
+							<td>
+								Avatar
+							</td>
+							<td>
+								Salary
+							</td>
+							<td>
+								Birthday
+							</td>
+							<td>
+								Operate
+							</td>
+						</tr>
+						<tr th:each="employee,state:${employeeList}" th:class="${state.odd?'row1':'row2'}">
+							<td>
+								<span th:text="${employee.id}"></span>
+							</td>
+							<td>
+								<span th:text="${employee.name}"></span>
+							</td>
+							<td>
+								<img th:src="@{/}+${employee.photo}" width="60">
+							</td>
+							<td>
+								<span th:text="${employee.salary}"></span>
+							</td>
+							<td>
+								<span th:text="${#dates.format(employee.birthday,'yyyy/MM/dd')}"></span>
+							</td>
+							<td>
+								<a href="javascript:;" th:onclick="'deleteEmployee('+${employee.id}+')'">delete</a>&nbsp;
+								<a th:href="@{/employee/detail(id=${employee.id})}">update</a>
+							</td>
+						</tr>
+						<script>
+							function deleteEmployee(id){
+								console.log(id);
+								if(window.confirm('Confirm to delete?')){
+									location.href='[[@{/employee/delete?id=}]]'+id;
+								}
+							}
+						</script>
+					</table>
+					<p>
+						<input type="button" class="button" value="add" onclick="addEmp()"/>
+						<script>
+							function addEmp() {
+								location.href = '[[@{/addEmp}]]';
+							}
+						</script>
+					</p>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="footer_bg">
+				admin@meiliu.com
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>regist</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" th:href="@{/css/style.css}"></link>
+
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="top_content">
+					<div id="header">
+						<div id="rightheader">
+							<p>
+								2022/03/20
+								<br />
+							</p>
+						</div>
+						<div id="topheader">
+							<h1 id="title">
+								<a href="#">main</a>
+							</h1>
+						</div>
+						<div id="navigation">
+						</div>
+					</div>
+				<div id="content">
+					<p id="whereami">
+					</p>
+					<h1>
+						Create new account.
+					</h1>
+					<form th:action="@{/user/register}" method="post">
+						<table cellpadding="0" cellspacing="0" border="0"
+							class="form_table">
+							<tr>
+								<td valign="middle" align="right">
+									Username:
+								</td>
+								<td valign="middle" align="left">
+									<input type="text" class="inputgri" name="username" />
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" align="right">
+									Real name:
+								</td>
+								<td valign="middle" align="left">
+									<input type="text" class="inputgri" name="realname" />
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" align="right">
+									Password:
+								</td>
+								<td valign="middle" align="left">
+									<input type="password" class="inputgri" name="password" />
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" align="right">
+									Gender:
+								</td>
+								<td valign="middle" align="left">
+									Male
+									<input type="radio" class="inputgri" name="gender" value="1" checked="checked"/>
+									Female
+									<input type="radio" class="inputgri" name="gender" value="0"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td valign="middle" align="right">
+									Verified code:
+									<img id="num" th:src="@{/user/generateimageCode}" />
+									<a href="javascript:;" onclick="changeImageCode()">Change another one</a>
+									<script>
+										function changeImageCode() {
+											document.getElementById('num').src = '[[@{/user/generateimageCode}]]?' + (new Date()).getTime()
+										}
+									</script>
+
+								</td>
+								<td valign="middle" align="left">
+									<input type="text" class="inputgri" name="code" />
+								</td>
+							</tr>
+						</table>
+						<p>
+							<input type="submit" class="button" value="create account &raquo;" />
+							<a href="login.html">Return to login.</a>
+						</p>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="footer_bg">
+				admin@meiliu.com
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

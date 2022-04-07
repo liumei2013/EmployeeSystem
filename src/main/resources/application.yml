@@ -1,0 +1,72 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /empsys
+  tomcat:
+    basedir: /Study/2022Win/05_Spring/emplyeesystem/tomcat
+
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/employee?characterEncoding=UTF-8
+    username: root
+    password: root
+  mvc:
+    static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/static/,file:${photo.file.dir}
+
+
+mybatis:
+  mapper-locations: classpath:com/meiliu/mapper/*.xml
+  type-aliases-package: com.meiliu.entity
+  configuration:
+    map-underscore-to-camel-case: false
+
+logging:
+  level:
+    root: info
+    com.meiliu: debug
+
+photo:
+  file:
+    dir: C:\Study\2022Win\05_Spring\EmplyeeSystem\photos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
