@@ -33,27 +33,27 @@ List the ready features here:
 
 ## Screenshots
 Welcome page:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Welcome.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Welcome.PNG?raw=true)
 
 Create new user:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Create.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Create.PNG?raw=true)
 
 Add employee information:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Add.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Add.PNG?raw=true)
 
 Read employee information:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/EmployeeList.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/EmployeeList.PNG?raw=true)
 
 Update employee information:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Update.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Update.PNG?raw=true)
 
 Delete employee:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Delete.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Delete.PNG?raw=true)
 
 MySQL database:
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL.PNG?raw=true)
 
-![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL2.png?raw=true)
+![Image](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL2.PNG?raw=true)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
