@@ -33,27 +33,27 @@ List the ready features here:
 
 ## Screenshots
 Welcome page:
-![](readme/Welcome.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Welcome.png)
 
 Create new user:
-![](readme/Create.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Create.png)
 
 Add employee information:
-![](readme/Add.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Add.png)
 
 Read employee information:
-![](readme/EmployeeList.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/EmployeeList.png)
 
 Update employee information:
-![](readme/Update.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Update.png)
 
 Delete employee:
-![](readme/Delete.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/Delete.png)
 
 MySQL database:
-![](readme/MySQL.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL.png)
 
-![](readme/MySQL2.png)
+![](https://github.com/liumei2013/EmployeeSystem/blob/main/readme/MySQL2.png)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
